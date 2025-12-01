@@ -16,6 +16,7 @@
 #else
 # include <winsock2.h>
 #endif
+#include <iostream>
 
 using namespace XmlRpc;
 

@@ -12,6 +12,7 @@
 # include <string.h>
 #endif
 #include <climits>
+#include <iostream>
 
 using namespace XmlRpc;
 
