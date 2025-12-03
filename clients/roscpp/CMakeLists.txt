@@ -134,8 +134,10 @@ add_dependencies(roscpp ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TA
 
 target_link_libraries(roscpp
   ${catkin_LIBRARIES}
-  ${Boost_LIBRARIES}
-  )
+  Boost::chrono
+  Boost::filesystem
+  Boost::system
+)
 
 if(WIN32)
   target_link_libraries(roscpp ws2_32)
